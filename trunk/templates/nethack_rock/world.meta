@@ -1,0 +1,29 @@
+[spawn]
+y = 161
+x = 48
+z = 16
+h = 0
+
+[teleports]
+
+[ops]
+
+[messages]
+
+[writers]
+
+[size]
+y = 160
+x = 96
+z = 32
+
+[display]
+physics = False
+highlight_ops = True
+finite_water = False
+
+[permissions]
+all_write = True
+private = False
+admin_blocks = True
+

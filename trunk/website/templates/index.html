@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <h1>What is The Archives?</h1>
+        <p>
+            It's a custom <a href="http://minecraft.net">Minecraft</a> server which contains historical copies of
+            as many other Minecraft servers as I can get permission for. You can
+            <a href="http://minecraft.net/play.jsp?server=f052712ff7a1f86b59f1b251c81aca25">access it here</a>.
+        </p>
+        
+        <h1>Why?</h1>
+        <p>
+            Sandbox mode has led to a lot of interesting building of random things,
+            and some very elaborate construction, and I'm the sort of person who doesn't
+            want to let that go to waste, even if nobody will ever want to see it again.
+        </p><p>
+            So, I built a custom server (actually, that part was just for fun) and an archivist
+            client that spiders servers and grabs their maps. Then, they're loaded into my
+            server's archives list, and available for players to load and have a look around.
+        </p><p>
+            If you're a server admin and want your server archived, post a link to it
+            in <a href="http://minecraftforum.net/viewtopic.php?id=1751">this thread</a>.
+        </p>
+        
+        <h1>How?</h1>
+        <p>
+            <a href="http://minecraft.net/play.jsp?server=f052712ff7a1f86b59f1b251c81aca25">Log into the server</a>, and try the following commands:
+            <pre>
+                /aname reddit
+                /atime newest
+                /aboot
+            </pre>
+            That will load up the newest archive of the reddit public server, and
+            load you into it. The server can support multiple 'worlds' at once; it
+            has a very verbose <tt>/help</tt> command that will assist you with most things,
+            by typing <tt>/help commandname</tt> (<tt>/help</tt> brings up a list of commands).
+        </p>
+        
+        <h1>Who?</h1>
+        <p>Me, Andrew. I'm know as aera in the forums and IRC, and andrewgodwin in-game (don't ask). You can see my personal site at <a href="http://aeracode.org">aeracode.org</a>.
+{% endblock %}

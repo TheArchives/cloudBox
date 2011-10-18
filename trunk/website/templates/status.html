@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Users</h1>
+<p>There {{ users|pluralize:"is,are" }} <b>{{ users|length }} user{{ users|pluralize }}</b>: {% for user in users %}{{ user }}{% if not forloop.last %}, {% endif %}{% endfor %}
+<h1>Worlds</h1>
+<p>There {{ worlds|pluralize:"is,are" }}  <b>{{ worlds|length }} world{{ worlds|pluralize }}</b>:</p>
+<dl>
+{% for world, users, info in worlds %}
+    <dt>
+        {{ world }}
+        {% if info.private %}<span class='private'>(Private)</span>{% endif %}
+        {% if info.locked %}<span class='locked'>(Locked)</span>{% endif %}
+        {% if info.physics %}<span class='physics'>(Physics)</span>{% endif %}
+    </dt>
+    {% for user in users %}
+        <dd>{{ user }}</dd>
+    {% endfor %}
+{% endfor %}
+{% endblock content %}
